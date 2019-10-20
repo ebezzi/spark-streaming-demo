@@ -2,10 +2,7 @@ package io.github.ebezzi.demo
 
 object WordCount2 {
 
-  def main(args: Array[String]): Unit = { // not necessary since Spark 1.3
-
-    // Create a local StreamingContext with two working thread and batch interval of 1 second.
-    // The master requires 2 cores to prevent a starvation scenario.
+  def main(args: Array[String]): Unit = {
 
     import org.apache.spark.sql.SparkSession
 
